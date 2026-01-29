@@ -1,1 +1,162 @@
 /* your code here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1ddf8a;
+}
+
+.product {
+	display: flex;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	max-width: 900px;
+	width: 100%;
+}
+
+/* LEFT SIDE (IMAGE) */
+.product__photo {
+	background: #b7e52a;
+	padding: 30px;
+}
+
+.photo-container {
+	position: relative;
+}
+
+.photo-main {
+	position: relative;
+}
+
+.photo-main img {
+	width: 280px;
+	display: block;
+	margin: auto;
+}
+
+.controls {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	font-size: 18px;
+}
+
+.photo-album {
+	margin-top: 20px;
+}
+
+.photo-album ul {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+
+.photo-album li {
+	background: #fff;
+	padding: 5px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.photo-album img {
+	width: 50px;
+}
+
+/* RIGHT SIDE (INFO) */
+.product__info {
+	padding: 40px;
+	flex: 1;
+}
+
+.title h1 {
+	font-size: 28px;
+	color: #333;
+}
+
+.title span {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.price {
+	margin: 20px 0;
+	font-size: 36px;
+	color: #ff4c4c;
+}
+
+.variant h3 {
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 10px;
+}
+
+.variant ul {
+	list-style: none;
+	display: flex;
+	gap: 12px;
+}
+
+.variant li {
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.variant img {
+	width: 30px;
+}
+
+/* DESCRIPTION */
+.description {
+	margin-top: 30px;
+}
+
+.description h3 {
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 10px;
+}
+
+.description ul {
+	padding-left: 18px;
+	color: #555;
+}
+
+.description li {
+	margin-bottom: 8px;
+}
+
+/* BUTTON */
+.add-to-cart {
+	margin-top: 30px;
+}
+
+.add-to-cart button {
+	background: #ff4c4c;
+	color: #fff;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 8px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.add-to-cart button:hover {
+	background: #e63e3e;
+}
